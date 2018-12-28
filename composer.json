@@ -1,0 +1,43 @@
+{
+    "name": "by/best-seller-products",
+    "description": "A plugin to get bestseller products",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "best seller products"
+    ],
+    "support": {
+        "docs": "https://github.com/bhashkar007/best-seller-products/blob/master/README.md",
+        "issues": "https://github.com/bhashkar007/best-seller-products/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bhashkar Yadav",
+            "homepage": "http://sidd3.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "by\\bestsellerproducts\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Best Seller Products",
+        "handle": "best-seller-products",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/bhashkar007/best-seller-products/master/CHANGELOG.md",
+        "components": {
+            "bestSellerProductsService": "by\\bestsellerproducts\\services\\BestSellerProductsService"
+        },
+        "class": "by\\bestsellerproducts\\BestSellerProducts"
+    }
+}
