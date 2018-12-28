@@ -1,8 +1,8 @@
+<img src="https://github.com/bhashkar007/bestsellerproducts/blob/master/src/icon.svg" width="100">
+
 # Best Seller Products plugin for Craft CMS 3.x
 
 Best Seller Product is a Craft CMS plugin that helps you to get best selling products in your Commerce Store.
-
-![Screenshot](src/icon.svg)
 
 ## Requirements
 
@@ -28,12 +28,12 @@ To install the plugin, follow these instructions.
 To simply get a list of best selling product IDs, use :
 
 	{% set bestSellerProductIds = craft.bestSellerProducts.getBSPIds(limit) %}
-        {% set bestsellers = craft.products.id(bestSellerProductIds).all() %}
+	{% set bestsellers = craft.products.id(bestSellerProductIds).all() %}
 
 To get the Number of Times a product has been bought, use:
 		
 	{% for bsp in craft.bestSellerProducts.getBSP(limit) %}
-	        {{ bsp.purchasableId }} -- {{ bsp.times_bought }}
+	    {{ bsp.purchasableId }} -- {{ bsp.times_bought }}
 	{% endfor %}
         
 `craft.bestSellerProducts.getBSP(limit)` will return an array cointaing `purchasableId` and `times_bought`
